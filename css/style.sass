@@ -1,0 +1,43 @@
+/** VARIABLES **/ 
+$navy-blue: #0074D9
+
+/** MIXINS **/  
+=linear-gradient-b($args...):
+    background-image: -o-linear-gradient($args)
+    background-image: -moz-linear-gradient($args)
+    background-image: -webkit-linear-gradient($args)
+    background-image: linear-gradient($args)
+
+/** STYLE **/
+html,body
+    height: auto
+body
+    +linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea)
+
+
+.absolute
+    position: absolute
+.full-screen
+    white-space: nowrap
+    left: 0
+    top: 0
+    bottom: 0
+.overlay
+    background-color: rgba(0,0,0,.5)
+    z-index: 9
+.screen
+    color: white
+    background-color: $navy-blue
+    text-transform: uppercase
+    font-family: 'Roboto','sans-serif'
+    font-weight: light
+    h1,.caption
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        position: relative
+        z-index: 10
+        
+    i,p
+        display: inline-block
+        padding: 0px 4px 0px 4px

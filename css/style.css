@@ -1,0 +1,49 @@
+/** VARIABLES **/
+/** MIXINS **/
+/** STYLE **/
+/* line 8, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+html, body {
+  height: auto; }
+
+/* line 10, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+body {
+  background: #ada996;
+  background: -webkit-linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  background: linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea); }
+
+/* line 16, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.absolute {
+  position: absolute; }
+
+/* line 18, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.full-screen {
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  bottom: 0; }
+
+/* line 23, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9; }
+
+/* line 26, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.screen {
+  color: white;
+  background-color: #0074D9;
+  text-transform: uppercase;
+  font-family: 'Roboto','sans-serif';
+  font-weight: light; }
+  /* line 32, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .screen h1, .screen .caption {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    z-index: 10; }
+  /* line 39, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .screen i, .screen p {
+    display: inline-block;
+    padding: 0px 4px 0px 4px; }
+
+/*# sourceMappingURL=style.css.map */
