@@ -25,6 +25,9 @@
     <!-- Roboto font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
+    <!-- Lato font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,400,700" rel="stylesheet">
+
     <!-- FontAwesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -32,16 +35,24 @@
 
 
 <body>
-    <div class="container-fluid absolute full-screen overlay"> </div>
-    <div class="container-fluid absolute full-screen screen text-center">
-        <h1 class="title">Welcome to IEE754 converter</h1>
-        <div class="caption">
-            <p>IEE754</p><i class="fa fa fa-arrows-h"></i>
-            <p>Decimal</p>
+    <div class="debug">
+        <div class="container-fluid absolute full-screen overlay"> </div>
+        <div class="container-fluid absolute full-screen screen lato 100 text-center">
+            <h1 class="title vertical-center">Welcome to IEE754 converter</h1>
+            <div class="caption vertical-center">
+                <p>IEE754</p><i class="fa fa fa-arrows-h"></i>
+                <p>Decimal</p>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <p></p>
+    
+    <div class="main">
+        <div class="container-fluid absolute full-screen overlay"> </div>
+        <div class="container-fluid text-center caption">
+            <h1 class="lato">What would you like to convert?<span class="blink">|</span></h1>
+            <div class="btn button lato light">Decimal <i class="fa fa fa-arrows-h"></i> IEE754</div>
+            <span class="btn button roboto light">IEE754 <i class="fa fa fa-arrows-h"></i> Decimal</span>
+        </div>
     </div>
 
     <!-- jQuery -->

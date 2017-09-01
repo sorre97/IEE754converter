@@ -32,16 +32,21 @@
 
 
 <body>
+    <div class="debug">
     <div class="container-fluid absolute full-screen overlay"> </div>
     <div class="container-fluid absolute full-screen screen text-center">
-        <h1 class="title">Welcome to IEE754 converter</h1>
-        <div class="caption">
+        <h1 class="title vertical-center">Welcome to IEE754 converter</h1>
+        <div class="caption vertical-center">
             <p>IEE754</p><i class="fa fa fa-arrows-h"></i>
             <p>Decimal</p>
         </div>
     </div>
-    <div class="container">
-        <p></p>
+    </div>
+    
+    <div class="wrapper">
+        <div class="container text-center">
+            <div class="vertical-center absolute" style="display: inline-block">Hola</div>
+        </div>
     </div>
 
     <!-- jQuery -->

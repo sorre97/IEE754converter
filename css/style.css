@@ -1,49 +1,112 @@
 /** VARIABLES **/
 /** MIXINS **/
+/** not working :( **/
 /** STYLE **/
-/* line 8, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+/* line 9, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
 html, body {
   height: auto; }
 
-/* line 10, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
-body {
-  background: #ada996;
-  background: -webkit-linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
-  background: linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea); }
+/* line 12, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9; }
 
-/* line 16, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+/* line 15, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.screen {
+  color: white;
+  background-color: #0074D9;
+  text-transform: uppercase; }
+  /* line 19, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .screen h1, .screen .caption {
+    position: relative;
+    position: relative;
+    z-index: 10; }
+  /* line 24, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .screen i, .screen p {
+    display: inline-block;
+    padding: 0px 4px 0px 4px; }
+
+/* line 28, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1477244075012-5cc28286e465?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  background-position: center center; }
+  /* line 36, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .main .caption {
+    z-index: 10; }
+  /* line 38, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .main .overlay {
+    background-color: rgba(0, 116, 217, 0.2); }
+  /* line 41, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .main h1 {
+    color: white;
+    font-weight: 200 !important;
+    font-size: 3em;
+    text-shadow: 0px 0px 6px white; }
+    /* line 46, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+    .main h1 span {
+      position: relative;
+      font-size: .8em;
+      bottom: 4px; }
+
+/** MODAL CLASSES **/
+/* line 52, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
 .absolute {
   position: absolute; }
 
-/* line 18, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+/* line 54, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.relative {
+  position: relative; }
+
+/* line 57, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
 .full-screen {
   white-space: nowrap;
   left: 0;
   top: 0;
   bottom: 0; }
 
-/* line 23, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9; }
-
-/* line 26, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
-.screen {
+/* line 63, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.button {
+  padding: 15px 20px;
+  background-color: rgba(35, 35, 35, 0.7);
   color: white;
-  background-color: #0074D9;
-  text-transform: uppercase;
-  font-family: 'Roboto','sans-serif';
+  border-radius: 2px;
+  border: 2px solid black;
+  transition: all 200ms ease; }
+  /* line 70, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .button:hover {
+    cursor: pointer;
+    background-color: black; }
+
+/* line 74, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%); }
+
+/* line 78, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.roboto {
+  font-family: 'Roboto',sans-serif; }
+
+/* line 80, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.lato {
+  font-family: 'Lato', sans-serif; }
+
+/* line 82, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.light {
   font-weight: light; }
-  /* line 32, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
-  .screen h1, .screen .caption {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    position: relative;
-    z-index: 10; }
-  /* line 39, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
-  .screen i, .screen p {
-    display: inline-block;
-    padding: 0px 4px 0px 4px; }
+
+/** ANIMATIONS **/
+/* line 87, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.blink {
+  animation: blink 1.5s step-start 0s infinite;
+  -webkit-animation: blink 1.5s step-start 0s infinite; }
+
+@keyframes blink {
+  50% {
+    opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */

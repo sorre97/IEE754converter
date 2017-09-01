@@ -1,27 +1,14 @@
+
 /** VARIABLES **/ 
 $navy-blue: #0074D9
 
 /** MIXINS **/  
-=linear-gradient-b($args...):
-    background-image: -o-linear-gradient($args)
-    background-image: -moz-linear-gradient($args)
-    background-image: -webkit-linear-gradient($args)
-    background-image: linear-gradient($args)
+/** not working :( **/
 
 /** STYLE **/
 html,body
     height: auto
-body
-    +linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea)
 
-
-.absolute
-    position: absolute
-.full-screen
-    white-space: nowrap
-    left: 0
-    top: 0
-    bottom: 0
 .overlay
     background-color: rgba(0,0,0,.5)
     z-index: 9
@@ -29,15 +16,78 @@ body
     color: white
     background-color: $navy-blue
     text-transform: uppercase
-    font-family: 'Roboto','sans-serif'
-    font-weight: light
     h1,.caption
         position: relative
-        top: 50%
-        transform: translateY(-50%)
         position: relative
         z-index: 10
         
     i,p
         display: inline-block
         padding: 0px 4px 0px 4px
+        
+.main
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    background-image: url("https://images.unsplash.com/photo-1477244075012-5cc28286e465?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=")
+    background-size: cover
+    background-position: center center
+    .caption
+        z-index: 10
+    .overlay
+        background-color: rgba(0, 116, 217, .2)
+        
+    h1
+        color: white
+        font-weight: 200 !important
+        font-size: 3em
+        text-shadow: 0px 0px 6px rgb(255,255,255)
+        span
+            position: relative
+            font-size: .8em
+            bottom: 4px
+        
+/** MODAL CLASSES **/
+.absolute
+    position: absolute
+.relative
+    position: relative
+
+.full-screen
+    white-space: nowrap
+    left: 0
+    top: 0
+    bottom: 0
+    
+.button
+    padding: 15px 20px
+    background-color: rgba(35,35,35,.7)
+    color: white
+    border-radius: 2px
+    border: 2px solid black
+    transition: all 200ms ease
+    &:hover
+        cursor: pointer
+        background-color: black
+    
+.vertical-center
+    top: 50%
+    transform: translateY(-50%)
+    
+.roboto
+    font-family: 'Roboto',sans-serif
+.lato
+    font-family: 'Lato', sans-serif
+.light
+    font-weight: light
+    
+
+/** ANIMATIONS **/
+.blink
+  animation: blink 1.5s step-start 0s infinite
+  -webkit-animation: blink 1.5s step-start 0s infinite
+
+@keyframes blink
+  50%
+    opacity: 0
