@@ -1,5 +1,5 @@
 
-/** VARIABLES **/ 
+/** VARIABLES  **/ 
 $navy-blue: #0074D9
 
 /** MIXINS **/  
@@ -22,6 +22,7 @@ $navy-blue: #0074D9
   
 
 +placeholder-color(rgb(230,230,230))
+
 /** STYLE **/
 html,body
     height: auto
@@ -32,17 +33,25 @@ html,body
     z-index: 9
 .screen
     color: white
+    z-index: 20
     background-color: $navy-blue
     text-transform: uppercase
+    display: flex
+    align-items: center
+    justify-content: center
     h1,.caption
+        -webkit-align-self: center
+        align-self: center
         position: relative
         z-index: 10
-        
+    h1
+        font-size: 2.5em
     i,p
         display: inline-block
         padding: 0px 4px 0px 4px
         
 .main
+    z-index: 10
     display: flex
     align-items: center
     justify-content: center
@@ -50,12 +59,12 @@ html,body
     background-image: url("https://images.unsplash.com/photo-1477244075012-5cc28286e465?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=")
     background-size: cover
     background-position: center center
-    .caption
+    .caption-main
         z-index: 10
-    .overlay
+    .overlay-main
         background-color: rgba(0, 116, 217, .2)
         
-    .title
+    .title-main
         color: white
         font-weight: 200 !important
         font-size: 3em
@@ -72,7 +81,7 @@ html,body
         font-weight: 300
         font-size: 1.3em
     input[type="text"]
-        padding: 10px 5px
+        padding: 10px 4.5px
         height: 2em
         color: white
         text-align: center
@@ -162,7 +171,9 @@ html,body
 .lato
     font-family: 'Lato', sans-serif
 .light
-    font-weight: light
+    font-weight: 300
+.lighter
+    font-weight: 100
 
 .margin-top-small
     margin-top: 20px

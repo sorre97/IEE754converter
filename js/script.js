@@ -2,17 +2,17 @@ var form1 = undefined;
 var form2 = undefined;
 
 function main(){
-    /*
     
-    $(".title").hide().fadeIn(1000).delay(3500).fadeOut(1000);
-    $(".caption").hide().delay(500).fadeIn(1000).delay(2500).fadeOut(1000);
+    $(".title").hide().fadeIn(1000).delay(3500).fadeTo(1000,0);
+    $(".caption").hide().fadeIn(2000).delay(2000).fadeTo(1000,0);
+    
     $(".overlay").delay(6000).fadeOut(200)
+ 
     $(".screen").delay(6000).animate({
         left: "+=100%",
     },500);
-    */
-    
-    $(".debug").hide();
+   
+   //$(".debug").hide();
     
     $(".decBut").on('click',function(){
         form1 = true;
@@ -32,8 +32,7 @@ function main(){
         }
         $(".decToBin").removeClass("priority");
         $(".binToDec").addClass("priority").fadeTo(400,1);
-    })
-    
+    }) 
 }
 
 $(document).ready(main());
