@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
     <!-- Lato font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -36,7 +36,9 @@
 
 <body>
     <div class="debug">
+        <!-- Overlay -->
         <div class="container-fluid absolute full-screen overlay"> </div>
+        <!-- Caption -->
         <div class="container-fluid absolute full-screen screen lato 100 text-center">
             <h1 class="title vertical-center">Welcome to IEE754 converter</h1>
             <div class="caption vertical-center">
@@ -47,11 +49,27 @@
     </div>
     
     <div class="main">
+        <!-- Overlay -->
         <div class="container-fluid absolute full-screen overlay"> </div>
+        <!-- Caption -->
         <div class="container-fluid text-center caption">
-            <h1 class="lato">What would you like to convert?<span class="blink">|</span></h1>
-            <div class="btn button lato light">Decimal <i class="fa fa fa-arrows-h"></i> IEE754</div>
-            <span class="btn button roboto light">IEE754 <i class="fa fa fa-arrows-h"></i> Decimal</span>
+            <h1 class="lato title">What would you like to convert?<span class="blink">|</span></h1>
+            
+            <!-- Buttons -->
+            <div class="btn button decBut lato">Decimal <i class="fa fa fa-long-arrow-right"></i> IEE754</div>
+            <span class="btn button binBut lato">IEE754 <i class="fa fa fa-long-arrow-right"></i> Decimal</span>
+            
+            <!-- Inputs -->
+            <div class="container decToBin padding-top-medium padding-bottom-medium lato">
+                <p>Insert the decimal value you wish to convert below</p>
+                <input maxlength="10" type="text" placeholder="Decimal Value" required>
+                <input type="submit" value="Convert">
+            </div>
+            <div class="container binToDec padding-top-medium padding-bottom-medium lato">
+                <p>Insert the binary value you wish to convert below</p>
+            <input maxlength="32" type="text" placeholder="Binary Value" required>
+                <input type="submit" value="Convert">
+            </div>
         </div>
     </div>
 
