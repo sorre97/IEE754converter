@@ -3,16 +3,16 @@ var form2 = undefined;
 
 function main(){
     
-    $(".title").hide().fadeIn(1000).delay(3500).fadeTo(1000,0);
+   /* $(".title").hide().fadeIn(1000).delay(3500).fadeTo(1000,0);
     $(".caption").hide().fadeIn(2000).delay(2000).fadeTo(1000,0);
     
     $(".overlay").delay(6000).fadeOut(200)
  
     $(".screen").delay(6000).animate({
         left: "+=100%",
-    },500);
+    },500); */
    
-   //$(".debug").hide();
+   $(".debug").hide();
     
     $(".decBut").on('click',function(){
         form1 = true;
@@ -23,7 +23,7 @@ function main(){
         $(".binToDec").removeClass("priority");
         $(".decToBin").addClass("priority").fadeTo(400,1);
     })
-    
+   
     $(".binBut").on('click',function(){
         form2 = true;
         if(form1 == true){

@@ -31,6 +31,9 @@
     <!-- FontAwesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Converter (JS) -->
+    <script src="./js/converter.js"></script>
+
 </head>
 
 
@@ -67,10 +70,12 @@
                 <input maxlength="10" type="text" placeholder="Decimal Value" required>
                 <input type="submit" value="Convert">
             </div>
+            
             <div class="container binToDec padding-top-medium padding-bottom-medium lato">
                 <p>Insert the binary value you wish to convert below</p>
-            <input maxlength="32" type="text" placeholder="Binary Value" required>
-                <input type="submit" value="Convert">
+                <input id ="binary" maxlength="32" type="text" placeholder="Binary Value" required>
+                <input type="submit" onclick="binToDec();" value="Convert">
+            <p id="result"></p>
             </div>
         </div>
     </div>
@@ -105,8 +110,7 @@
     <!-- Animation script (jQuery) -->
     <script src="./js/script.js"></script>
 
-    <!-- Converter (JS) -->
-    <script src="./js/converter.js"></script>
+    
 
 </body>
 </html>
