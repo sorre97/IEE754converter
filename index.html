@@ -67,8 +67,9 @@
             <!-- Inputs -->
             <div class="container decToBin padding-top-medium padding-bottom-medium lato">
                 <p>Insert the decimal value you wish to convert below</p>
-                <input maxlength="10" type="text" placeholder="Decimal Value" required>
-                <input type="submit" value="Convert">
+                <input id="decimal" maxlength="10" type="text" placeholder="Decimal Value" required>
+                <input type="submit" onclick="decToBin();" value="Convert">
+                <p id="result"></p>
             </div>
             
             <div class="container binToDec padding-top-medium padding-bottom-medium lato">
