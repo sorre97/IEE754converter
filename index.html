@@ -68,15 +68,19 @@
             <div class="container decToBin padding-top-medium padding-bottom-medium lato">
                 <p>Insert the decimal value you wish to convert below</p>
                 <input id="decimal" maxlength="10" type="text" placeholder="Decimal Value" required>
-                <input type="submit" onclick="decToBin();" value="Convert">
-                <p id="result"></p>
+                <input id="submit" type="submit" onclick="decToBin();" value="Convert">
+                <div class="result-wrapper1 text-center">
+                    <p id="resultdec"></p>
+                </div>
             </div>
             
-            <div class="container binToDec padding-top-medium padding-bottom-medium lato">
+            <div class="container binToDec padding-top-small padding-bottom-medium lato">
                 <p>Insert the binary value you wish to convert below</p>
                 <input id ="binary" maxlength="32" type="text" placeholder="Binary Value" required>
-                <input type="submit" onclick="binToDec();" value="Convert">
-            <p id="result"></p>
+                <input id="submit" type="submit" onclick="binToDec();" value="Convert">
+            <div class="result-wrapper2 text-center">
+                <p id="resultbin"></p>
+            </div>
             </div>
         </div>
     </div>
