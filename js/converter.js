@@ -22,6 +22,8 @@ function decimal(number) {
     man = '0'.repeat(23);
   } else {
     try {
+      number = number.replace(",",".");
+      console.log(number);
       number = parseFloat(number); //Converting to float
       if (isNaN(number)) throw Error;
     } catch (Error) {
@@ -115,7 +117,8 @@ function binary(binum) {
     else {
       var number = binary_conversion(sign, exp, man);
       var rounded_number = number.toFixed(8);
-      return number + ' ≈ ' + rounded_number;
+        
+      return number + ' ≈ ' + parseFloat(rounded_number);
     }
   }
 }
