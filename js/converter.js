@@ -116,9 +116,15 @@ function binary(binum) {
       return 'NaN';
     else {
       var number = binary_conversion(sign, exp, man);
-      var rounded_number = number.toFixed(8);
-        
-      return number + ' ≈ ' + parseFloat(rounded_number);
+      try{
+          var round_precision = prompt("How many maximum decimal digits? (Max 8)",3);
+          round_precision = parseInt(round_precision);
+          console.log(round_precision,typeof round_precision);
+          if (round_precision.isNaN || round_precision > 8){throw Error;}
+        }catch(Error){
+          return "Wrong or out of bound precision digit value"
+        }
+      return number + ' ≈ ' + parseFloat(number.toFixed(round_precision));
     }
   }
 }
