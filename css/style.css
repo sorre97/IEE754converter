@@ -1,0 +1,260 @@
+/** VARIABLES  **/
+/** MIXINS **/
+/** not working :( **/
+/* line 8, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.placeholder {
+  color: #e6e6e6; }
+
+/* line 12, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+:-moz-placeholder {
+  color: #e6e6e6; }
+
+/* line 16, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+::-webkit-input-placeholder {
+  color: #e6e6e6; }
+
+/* line 20, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+:-ms-input-placeholder {
+  color: #e6e6e6; }
+
+/** STYLE **/
+/* line 27, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+html, body {
+  height: auto;
+  color: white; }
+
+/* line 31, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9; }
+
+/* line 34, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.screen {
+  color: white;
+  z-index: 20;
+  background-color: #0074D9;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  /* line 42, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .screen h1, .screen .caption {
+    -webkit-align-self: center;
+    align-self: center;
+    position: relative;
+    z-index: 10; }
+  /* line 47, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .screen h1 {
+    font-size: 2.5em; }
+  /* line 49, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .screen i, .screen p {
+    display: inline-block;
+    padding: 0px 4px 0px 4px; }
+
+/* line 53, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.main {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1477244075012-5cc28286e465?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  background-position: center center; }
+  /* line 62, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .main .caption-main {
+    z-index: 10; }
+  /* line 64, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .main .overlay-main {
+    background-color: rgba(0, 116, 217, 0.2); }
+  /* line 67, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .main .title-main {
+    color: white;
+    font-weight: 200 !important;
+    font-size: 3em;
+    text-shadow: 0px 0px 4px white; }
+    /* line 72, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+    .main .title-main span {
+      margin-left: 2px;
+      position: relative;
+      font-size: .8em;
+      bottom: 4px; }
+
+/* line 77, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.decToBin, .binToDec {
+  opacity: 0;
+  position: relative; }
+  /* line 80, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .decToBin p:first-child, .binToDec p:first-child {
+    font-weight: 300;
+    font-size: 1.3em; }
+  /* line 83, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .decToBin input[type="text"], .binToDec input[type="text"] {
+    padding: 10px 4.5px;
+    height: 2em;
+    color: white;
+    text-align: center;
+    background-color: rgba(69, 67, 67, 0.6);
+    border: 1.5px solid #f0f0f0; }
+  /* line 90, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .decToBin input[type="submit"], .binToDec input[type="submit"] {
+    width: 100px;
+    font-family: "Lato",sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: .9em;
+    border: 1px solid white;
+    padding: 5px 10px;
+    font-weight: 300; }
+    /* line 99, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+    .decToBin input[type="submit"]:focus, .binToDec input[type="submit"]:focus {
+      color: red; }
+
+/* line 102, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.result-wrapper1 {
+  margin-top: 20px;
+  left: 50%;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateX(-50%);
+  position: relative; }
+  /* line 109, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .result-wrapper1 #resultbin, .result-wrapper1 #resultdec {
+    font-size: 1.1em; }
+
+/* line 111, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.result-wrapper2 {
+  margin-top: 20px;
+  left: 50%;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateX(-50%);
+  position: relative; }
+  /* line 118, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .result-wrapper2 #resultbin, .result-wrapper2 #resultdec {
+    font-size: 1.1em; }
+
+/* line 124, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.decToBin input[type="text"] {
+  width: 200px; }
+
+/* line 127, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.binToDec {
+  margin-top: -155px; }
+  /* line 129, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .binToDec input[type="text"] {
+    width: 320px; }
+
+/** MODAL CLASSES **/
+/* line 136, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.absolute {
+  position: absolute; }
+
+/* line 138, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.relative {
+  position: relative; }
+
+/* line 141, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.full-screen {
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  bottom: 0; }
+
+/* line 147, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.button {
+  margin: 0px 10px;
+  padding: 15px 20px;
+  position: relative;
+  border-radius: 1px;
+  border: 1px solid red;
+  background-color: rgba(35, 35, 35, 0.7);
+  color: #f0f0f0;
+  transition: all 500ms ease;
+  font-weight: 300;
+  font-size: 1.1rem; }
+  /* line 158, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.4);
+    color: white;
+    transition: all 200ms ease; }
+    /* line 165, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+    .button:hover:before, .button:hover:after {
+      transition: all 400ms ease;
+      width: 100%; }
+  /* line 168, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .button:before, .button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background: black;
+    transition: all 200ms ease; }
+  /* line 177, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+  .button:after {
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0; }
+
+/* line 183, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.priority {
+  z-index: 99; }
+
+/* line 186, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%); }
+
+/* line 190, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.roboto {
+  font-family: 'Roboto',sans-serif; }
+
+/* line 192, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.lato {
+  font-family: 'Lato', sans-serif; }
+
+/* line 194, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.light {
+  font-weight: 300; }
+
+/* line 196, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.lighter {
+  font-weight: 100; }
+
+/* line 199, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.margin-top-small {
+  margin-top: 20px; }
+
+/* line 201, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.padding-top-small {
+  padding-top: 20px; }
+
+/* line 203, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.margin-top-medium {
+  margin-top: 40px; }
+
+/* line 205, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.padding-top-medium {
+  padding-top: 40px; }
+
+/* line 207, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.padding-bottom-medium {
+  padding-bottom: 40px; }
+
+/** ANIMATIONS **/
+/* line 212, /Users/user/Desktop/<:>/GitHub/IEE754converter-JS/css/style.sass */
+.blink {
+  animation: blink 1.5s step-start 0s infinite;
+  -webkit-animation: blink 1.5s step-start 0s infinite; }
+
+@keyframes blink {
+  50% {
+    opacity: 0; } }
+
+/*# sourceMappingURL=style.css.map */

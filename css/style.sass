@@ -1,0 +1,218 @@
+
+/** VARIABLES  **/ 
+$navy-blue: #0074D9
+
+/** MIXINS **/  
+/** not working :( **/
+=placeholder-color($color)
+  &.placeholder
+    color: $color
+  
+
+  &:-moz-placeholder
+    color: $color
+  
+    
+  &::-webkit-input-placeholder
+    color: $color
+  
+
+  &:-ms-input-placeholder
+    color: $color
+  
+
++placeholder-color(rgb(230,230,230))
+
+/** STYLE **/
+html,body
+    height: auto
+    color: white
+
+.overlay
+    background-color: rgba(0,0,0,.5)
+    z-index: 9
+.screen
+    color: white
+    z-index: 20
+    background-color: $navy-blue
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    justify-content: center
+    h1,.caption
+        -webkit-align-self: center
+        align-self: center
+        position: relative
+        z-index: 10
+    h1
+        font-size: 2.5em
+    i,p
+        display: inline-block
+        padding: 0px 4px 0px 4px
+        
+.main
+    z-index: 10
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    background-image: url("https://images.unsplash.com/photo-1477244075012-5cc28286e465?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=")
+    background-size: cover
+    background-position: center center
+    .caption-main
+        z-index: 10
+    .overlay-main
+        background-color: rgba(0, 116, 217, .2)
+        
+    .title-main
+        color: white
+        font-weight: 200 !important
+        font-size: 3em
+        text-shadow: 0px 0px 4px rgb(255,255,255)
+        span
+            margin-left: 2px
+            position: relative
+            font-size: .8em
+            bottom: 4px
+.decToBin,.binToDec
+    opacity: 0
+    position: relative
+    p:first-child
+        font-weight: 300
+        font-size: 1.3em
+    input[type="text"]
+        padding: 10px 4.5px
+        height: 2em
+        color: white
+        text-align: center
+        background-color: rgba(69, 67, 67, .6)
+        border: 1.5px solid rgb(240,240,240)
+    input[type="submit"]
+        width: 100px
+        font-family: "Lato",sans-serif
+        background-color: rgba(0,0,0,.8)
+        color: white
+        font-size: .9em
+        border: 1px solid white
+        padding: 5px 10px
+        font-weight: 300
+        &:focus
+            color: red
+        
+.result-wrapper1
+    margin-top: 20px
+    left: 50%
+    width: 400px
+    background-color: rgba(0,0,0,.8)
+    transform: translateX(-50%)
+    position: relative
+    #resultbin , #resultdec
+        font-size: 1.1em
+.result-wrapper2
+    margin-top: 20px
+    left: 50%
+    width: 350px
+    background-color: rgba(0,0,0,.8)
+    transform: translateX(-50%)
+    position: relative
+    #resultbin , #resultdec
+        font-size: 1.1em
+
+    
+        
+.decToBin
+    input[type="text"]
+        width: 200px
+        
+.binToDec
+    margin-top: -155px
+    input[type="text"]
+        width: 320px
+        
+    
+
+        
+/** MODAL CLASSES **/
+.absolute
+    position: absolute
+.relative
+    position: relative
+
+.full-screen
+    white-space: nowrap
+    left: 0
+    top: 0
+    bottom: 0
+    
+.button
+    margin: 0px 10px
+    padding: 15px 20px
+    position: relative
+    border-radius: 1px
+    border: 1px solid red
+    background-color: rgba(35,35,35,.7)
+    color: #f0f0f0
+    transition: all 500ms ease
+    font-weight: 300
+    font-size: 1.1rem
+    &:hover
+        transform: scale(1.05)
+        cursor: pointer
+        border: none
+        background-color: rgba(255,0,0,.4)
+        color: white
+        transition: all 200ms ease
+        &:before , &:after
+            transition: all 400ms ease
+            width: 100%
+    &:before , &:after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0px
+        width: 0px
+        height: 2px
+        background: black
+        transition: all 200ms ease
+    &:after 
+        top: inherit
+        left: inherit
+        bottom: 0
+        right: 0
+
+.priority
+    z-index: 99
+    
+.vertical-center
+    top: 50%
+    transform: translateY(-50%)
+    
+.roboto
+    font-family: 'Roboto',sans-serif
+.lato
+    font-family: 'Lato', sans-serif
+.light
+    font-weight: 300
+.lighter
+    font-weight: 100
+
+.margin-top-small
+    margin-top: 20px
+.padding-top-small
+    padding-top: 20px
+.margin-top-medium
+    margin-top: 40px
+.padding-top-medium
+    padding-top: 40px
+.padding-bottom-medium
+    padding-bottom: 40px
+    
+
+/** ANIMATIONS **/
+.blink
+  animation: blink 1.5s step-start 0s infinite
+  -webkit-animation: blink 1.5s step-start 0s infinite
+
+@keyframes blink
+  50%
+    opacity: 0

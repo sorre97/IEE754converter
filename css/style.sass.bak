@@ -1,0 +1,57 @@
+/** VARIABLES **/ 
+$navy-blue: #0074D9
+
+/** MIXINS **/  
+/** not working :( **/
+
+/** STYLE **/
+html,body
+    height: auto
+body
+    background: #ada996
+    background: -webkit-linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea)
+    background: linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea)
+
+.overlay
+    background-color: rgba(0,0,0,.5)
+    z-index: 9
+.screen
+    color: white
+    background-color: $navy-blue
+    text-transform: uppercase
+    h1,.caption
+        position: relative
+        position: relative
+        z-index: 10
+        
+    i,p
+        display: inline-block
+        padding: 0px 4px 0px 4px
+        
+.main
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+        
+/** MODAL CLASSES **/
+.absolute
+    position: absolute
+.relative
+    position: relative
+
+.full-screen
+    white-space: nowrap
+    left: 0
+    top: 0
+    bottom: 0
+    
+.vertical-center
+    //Only for relative child in absolute
+    top: 50%
+    transform: translateY(-50%)
+.roboto
+    font-family: 'Roboto','sans-serif'
+.light
+    font-weight: light
+    

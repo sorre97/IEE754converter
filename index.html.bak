@@ -25,64 +25,27 @@
     <!-- Roboto font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
-    <!-- Lato font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
-
     <!-- FontAwesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Converter (JS) -->
-    <script src="./js/converter.js"></script>
 
 </head>
 
 
 <body>
     <div class="debug">
-        <!-- Overlay -->
-        <div class="container-fluid absolute full-screen overlay"> </div>
-        <!-- Caption -->
-        <div class="container-fluid absolute full-screen screen text-center">
-            <div class="screen-wrapper">
-                <h1 class="title relative lighter">Welcome to IEE754 converter</h1>
-                <div class="caption relative ">
-                    <p>IEE754</p><i class="fa fa fa-arrows-h"></i>
-                    <p>Decimal</p>
-                </div>
-            </div>
+    <div class="container-fluid absolute full-screen overlay"> </div>
+    <div class="container-fluid absolute full-screen screen text-center">
+        <h1 class="title vertical-center">Welcome to IEE754 converter</h1>
+        <div class="caption vertical-center">
+            <p>IEE754</p><i class="fa fa fa-arrows-h"></i>
+            <p>Decimal</p>
         </div>
     </div>
+    </div>
     
-    <div class="main">
-        <!-- Overlay -->
-        <div class="container-fluid absolute full-screen overlay-main"> </div>
-        <!-- Caption -->
-        <div class="container-fluid text-center caption-main">
-            <h1 class="lato title-main">What would you like to convert?<span class="blink">|</span></h1>
-            
-            <!-- Buttons -->
-            <div class="btn button decBut lato">Decimal <i class="fa fa fa-long-arrow-right"></i> IEE754</div>
-            <span class="btn button binBut lato">IEE754 <i class="fa fa fa-long-arrow-right"></i> Decimal</span>
-            
-            <!-- Inputs -->
-            <div class="container decToBin padding-top-medium padding-bottom-medium lato">
-                <p>Insert the decimal value you wish to convert below</p>
-                <input id="decimal" maxlength="10" type="text" placeholder="Decimal Value" required>
-                <input id="submit" type="submit" onclick="decToBin();" value="Convert">
-                <div class="result-wrapper1 text-center">
-                    <p id="resultdec"></p>
-                </div>
-            </div>
-            
-            <div class="container binToDec padding-top-small padding-bottom-medium lato">
-                <p>Insert the binary value you wish to convert below</p>
-                <input id ="binary" maxlength="32" type="text" placeholder="Binary Value" required>
-                <input id="submit" type="submit" onclick="binToDec();" value="Convert">
-            <div class="result-wrapper2 text-center">
-                <p id="resultbin"></p>
-            </div>
-            <p style="font-size: .8em">*Please keep in mind that this is just an aproximation of the original value</p>
-            </div>
+    <div class="wrapper">
+        <div class="container text-center">
+            <div class="vertical-center absolute" style="display: inline-block">Hola</div>
         </div>
     </div>
 
@@ -116,7 +79,8 @@
     <!-- Animation script (jQuery) -->
     <script src="./js/script.js"></script>
 
-    
+    <!-- Converter (JS) -->
+    <script src="./js/converter.js"></script>
 
 </body>
 </html>
